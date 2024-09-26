@@ -1,0 +1,174 @@
+ion-content {
+  --overflow: hidden;
+  padding: 0;
+  margin: 0;
+  height: 102%;
+  overflow: hidden; /* Certifique-se de que isso está aqui */
+}
+
+.scroll-content {
+  overflow: hidden !important;
+  height: 100vh !important;
+}
+.FLayer {
+  background: linear-gradient(to top, #57a7fb, #b8e0f7);
+  color: #efefef;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 1rem;
+  position: relative;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1.5vh; /* Move o h2, os inputs e o botão para baixo */
+}
+
+.FLayer h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.inputs ion-input {
+  background: #efefef;
+  border-radius: 20em;
+  width: 60vw;
+  height: 2.3em;
+  margin: 0.5em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+  width: 100%;
+}
+
+.submit button {
+  width: 50vw !important;
+  height: 3em;
+  background-color: #4c5dc2;
+  color: white;
+  border-radius: 2em;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.submit button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.Forgotpass {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+.centraliza{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.onda {
+  display: block;
+  width: 100%;
+  margin-top: 20vh;
+}
+.onda svg {
+  width: 100%;
+  transform: scaleY(1.7);
+}
+
+.SLayer {
+  flex: 1;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.otherlm {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  max-width: 400px;
+}
+
+.button {
+  justify-content: center;
+  height: 3.5vh;
+  width: 20vh;
+  padding: 0.5em 2em;
+  border-radius: 2em;
+  font-size: 1rem;
+}
+
+.google {
+  background-color: #d44a4a;
+}
+
+.facebook {
+  background-color: #3e5dcd;
+}
+
+.GOlogin,
+.fp {
+  position: relative;
+  text-align: center;
+  padding-bottom: 4.5vh;
+  font-size: 0.9rem;
+  color: #000000;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .FLayer h2 {
+    font-size: 1.2rem;
+  }
+
+  .inputs ion-input,
+  .submit button {
+    width: 80vw;
+  }
+
+  .SLayer {
+    height: auto;
+  }
+}
+
+@media (max-width: 320px) {
+  .FLayer h2 {
+    font-size: 1rem;
+  }
+
+  .inputs ion-input,
+  .submit button {
+    width: 60vw;
+  }
+
+  .SLayer {
+    height: auto;
+  }
+}
